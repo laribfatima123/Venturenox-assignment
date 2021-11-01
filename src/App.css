@@ -1,0 +1,169 @@
+.App {
+  text-align: center;
+}
+.image-width{
+  width:100% !important;
+}
+.grey{
+  color: #c0c0c0;
+}
+.f-12{
+  font-size: 10px;
+}
+.img-width{
+  width:14px;
+}
+.f-22{
+  font-size: 20px;
+}
+.font-34{
+  font-size: 45px;
+}
+.desc{
+  font-size: 12px;
+  text-align: left;
+}
+.margin{
+  marginTop:30px;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.wrapper{
+  display: inline-flex;
+  background: #fff;
+  height: 100px;
+  width: 400px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  padding: 20px 15px;
+  box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+}
+.wrapper .option{
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 10px;
+  border: 2px solid lightgrey;
+  transition: all 0.3s ease;
+}
+.wrapper .option .dot{
+  height: 20px;
+  width: 20px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+}
+.wrapper .option .dot::before{
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background: #0069d9;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+}
+input[type="radio"]{
+  display: none;
+}
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2{
+  border-color: #0069d9;
+  background: #0069d9;
+}
+#option-1:checked:checked ~ .option-1 .dot,
+#option-2:checked:checked ~ .option-2 .dot{
+  background: #fff;
+}
+#option-1:checked:checked ~ .option-1 .dot::before,
+#option-2:checked:checked ~ .option-2 .dot::before{
+  opacity: 1;
+  transform: scale(1);
+}
+.wrapper .option span{
+  font-size: 20px;
+  color: #808080;
+}
+#option-1:checked:checked ~ .option-1 span,
+#option-2:checked:checked ~ .option-2 span{
+  color: #fff;
+}
+img{
+  object-fit: contain !important;
+}
+.styling{
+  font-size: 20px;
+  font-weight: 700;
+  margin-top:12px;
+  margin-bottom: 12px;
+}
+.h-39{
+  height: 39vh;
+}
+.margin-left{
+  margin-left: 2.5em;
+}
+@media only screen and (max-width: 768px)
+{
+  .media{
+   flex-direction: column;
+  }
+  .width-percentage{
+    width:100% !important;
+  }
+  .width-image-res{
+    width: 100vw;
+
+    margin-bottom: 19px;
+
+  }
+  .margin-left{
+    margin-left:0 !important;
+  }
+}
+
+
+
+
